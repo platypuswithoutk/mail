@@ -2,12 +2,20 @@
     .main-content-wrapper {
         width: 100%;
     }
+    header {
+        background-size: 100%;
+    }
 }
     
 @media screen and (max-width: 1500px) {
     .header-container {
         margin: 0 50px;
         padding-bottom: 50px;
+    }
+
+    header {
+        background-size: 100%;
+        background-position: center;
     }
 
     .nav-container {
@@ -28,9 +36,9 @@
     }
 
     .benefits-describ:first-child:after {
-        left: 72%;
-        bottom: 140%;
-        width: 170px;
+        left: 66%;
+        bottom: 90%;
+        width: 228px;
     }
 
     .benefits-describ:nth-child(2) {
@@ -85,19 +93,19 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1054px) {
     
     header, .main-content-wrapper  {
-        width:108%;
+        width:100%;
     }
 
     header {
         background-size: 127%;
+        background-position: center;
     }
 
-
     .nav-container {
-        flex-basis: 24%;
+        flex-basis: 26%;
     }
 
     .benefits-describ {
@@ -105,22 +113,22 @@
     }
 
     .benefits-describ:nth-child(2) {
-        padding-left: 28px;
+        padding-left: 18px;
     }
 
     .benefits-describ:first-child:after {
-        left: 76%;
-        bottom: 116%;
-        width: 176px;
+        left: 68%;
+        bottom: 138%;
+        width: 221px;
     }
 
     .benefits-describ:last-child:before {
-        top: 198%;
-        width: 354px;
+        top: 213%;
+        width: 351px;
     }
 
-    #security {
-        margin-right: -64px;
+    .benefits {
+        justify-content: normal;
     }
 
     .security-text {
@@ -128,7 +136,12 @@
     }
 
     #second-column {
-        margin-left: 1px;
+        margin-left: 8px;
+    }
+
+    .security-text {
+        text-align: right;
+        margin: 96px 291px 14px -2px;
     }
 
     .describ p {
@@ -153,11 +166,11 @@
     }
 
     .donate-container {
-        margin-left: 50px;
+        margin-left: 20px;
     }
 
     .contact {
-        margin-left: 252px;
+        margin-left: 230px;
     }
 
     .useful-links {
@@ -165,78 +178,199 @@
     }
 }
 
-@media screen and (min-width: 768px) {
-
-    header, .main-content-wrapper  {
-        width:136%;
+@media screen and (max-width: 768px) {
+    .main-content-wrapper {
+        width: 100%;
+    }
+    
+    header {
+        background-size: 164%;
+        background-position: center;
     }
 
-    .header-container {
+    .nav-container {
+        flex-basis: 100%;
         margin: 0;
     }
 
+    .users-panel {
+        display: flex;
+        margin-top: -156px;
+        margin-right: 10px;
+    }
+
+    .nav-menu ul {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .describe-website {
+        margin-left: 108px;
+    }
+
+    #create-button {
+        width: 137px;
+        height: 48px;
+    }
+
+    .small-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .main-buttons {
+        padding-bottom: 100px;
+    }
+
     .benefits {
-        justify-content: normal;
-        margin-left:10px;
-        padding-bottom: 55px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 
-    .describ:nth-child(2) {
-         padding-left: 0px;
-        padding-right: 0px;
+    .benefits-describ:first-child:after, .benefits-describ:last-child:before, .learn-more::after {
+        display: none;
     }
 
-    .tittle h4 {
-        font-size: 20px;
-    }
-
-    .tittle h5 {
-        font-size: 15px;
-    }
-
-    .benefits-describ:first-child:after {
-        left: 73%;
-        bottom: 130%;
-        width: 176px;
-    }
-
-    .benefits-describ:last-child:before {
-        top: 190%;
-        width: 315px;
+    .benefits-name.key {
+        padding-top: 75px;
     }
 
     .security-text {
-        width: 668px;
+        margin: 0;
+        text-align: center;
+        padding-bottom: 30px;
     }
 
-    .laptop-container {
-        margin-right: -167px;
-        background: url(../assets/img/laptop.png) 100% no-repeat;
+    .security-text h4 {
+        font-size: 35px;
+    }
+
+    .security-text p {
+        font-size: 20px;
+    }
+
+    .learn-more {
+        margin-left: 28%;
+    }
+
+    .publications-icons a img {
+        height:50px;
+    }
+
+    .publications-icons {
+        margin-left: 0;
+        width:100%;
+    }
+
+    .publications-icons a {
+        margin: 0;
     }
 
     .publications-text {
-        margin-left: 35px;
+        margin-left: 33px;
+        width: 447px;
+    }
+    
+    .laptop-container {
+        margin-left: 92px;
+        background-position: center;
+    }
+
+    .laptop-text {
+        text-align:center;
+        margin-top: 59px;
+        margin-left: -35px;
+    }
+
+    blockquote {
+        font-size: 17px;
     }
 
     .donate-container {
-        margin-left: 8px;
+        margin-left: -113px;
     }
 
     .helper-wrapper {
-        width: 947px;
+        width: 100%;
     }
 
-    .helper-icons {
-        margin-left: 0;
+    .info-container {
+        top: 30px;
+        width:100%;
     }
 
-    .useful-links {
-        margin-left: 80px;
+    .useful-links:after {
+        display: none;
     }
-@media screen and (max-width: 480px) {
+}
+   
+@media screen and (max-width: 540px) {
+    .main-content-wrapper {
+        width: 133%;
+    }
     
+    header {
+        width: 133%;
+        background-size: 172%;
+        background-position: center;
+    }
+
+    .describe-website {
+        margin-left: 64px;
+    }
+
+    #security {
+        width: 133%;
+    }
+
+    .laptop-container {
+        width: 116%;
+    }
+
+    .donate-container {
+        width: 153%;
+    }
+
+    .donate-wrapper {
+        margin-left: 148px;
+    }
+
+    .helper-wrapper {
+        border-top: 0px;
+        border-right: 0px;
+    }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
+    .main-content-wrapper {
+        width: 191%;
+    }
     
+    header {
+        width: 191%;
+        background-size: 212%;
+        background-position: center;
+    }
+
+    #security {
+        width: 191%;
+    }
+
+    .laptop-container {
+        width: 166%;
+    }
+
+    .donate-container {
+        width: 221%;
+    }
 }
